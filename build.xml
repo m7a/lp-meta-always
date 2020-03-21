@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="build">
+
+<!-- METAPACKGAGE FIXED CONF -->
+<property name="masysma.target"    value="_"/>
+<property name="mdpc.section"      value="metapackages"/>
+<property name="mdpc.arch"         value="all"/>
+<property name="mdpc.file.install" value=""/>
+
+<!-- METAPACKGAGE SPECIFIC DETAILS -->
+<property name="mdpc.name" value="mdvl-meta-always"/>
+<property name="mdpc.depends"
+	>ant, ant-optional, libxz-java, lsb-release, libncursesw5, rsync,
+	dialog, xz-utils, gnupg, p7zip-full, p7zip-rar, wget, ssh, coreutils,
+	reprepro, php7.3-cli, mmdebstrap, debootstrap, sqlite3, parallel, perl,
+	php7.3-pdo-sqlite, buffer, dos2unix, curl, pv, git,
+	openjdk-8-jdk | openjdk-11-jdk</property>
+<property name="mdpc.descrs" value="MDVL minimal dependencies"/>
+<property name="mdpc.descrl">
+ Package to install some very basic packages which are needed in just about
+ all MDVL contexts. This includes some programming languages, compression
+ tools and an SSH client.
+</property>
+
+<!-- CI INTEGRATION -->
+<target name="package_triggered" depends="package">
+	<property name="masysma.ci.trigger" value="newver"/>
+</target>
+
+<!-- CONST TPL IMPORT -->
+<property environment="env"/>
+<condition property="masysma.internal.includepath.rel" value="${env.MDVL_CI_PHOENIX_ROOT}" else=".."><isset property="env.MDVL_CI_PHOENIX_ROOT"/></condition>
+<property name="masysma.internal.includepath" location="${masysma.internal.includepath.rel}"/>
+<property name="masysma.internal.loadpath" value="${masysma.internal.includepath}/co-build/ant-build-template.xml"/>
+<condition property="masysma.internal.load" value="file://${masysma.internal.loadpath}" else="https://raw.githubusercontent.com/m7a/co-build/master/ant-build-template.xml"><resourceexists><file file="${masysma.internal.loadpath}"/></resourceexists></condition>
+<import><url url="${masysma.internal.load}"/></import>
+
+</project>
