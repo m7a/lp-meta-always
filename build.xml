@@ -11,10 +11,16 @@
 <property name="mdpc.name" value="mdvl-meta-always"/>
 <property name="mdpc.depends"
 	>ant, ant-optional, libxz-java, lsb-release, libncursesw5, rsync,
-	dialog, xz-utils, gnupg, p7zip-full, p7zip-rar, wget, ssh, coreutils,
+	dialog, xz-utils, gnupg, p7zip-full, wget, ssh, coreutils,
 	reprepro, php7.3-cli, mmdebstrap, debootstrap, sqlite3, parallel, perl,
-	php7.3-pdo-sqlite, buffer, dos2unix, curl, pv, git,
+	php7.3-pdo-sqlite, buffer, dos2unix, curl, pv, git, openssh-server,
 	openjdk-8-jdk | openjdk-11-jdk</property>
+<!--
+	p7zip-rar: we would like this to be a depends, but it is in non-free,
+	thus we only recommend it as to permit debian main only systems with
+	this package installed.
+-->
+<property name="mdpc.recommends" value="p7zip-rar"/>
 <property name="mdpc.descrs" value="MDVL minimal dependencies"/>
 <property name="mdpc.descrl">
  Package to install some very basic packages which are needed in just about
