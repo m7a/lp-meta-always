@@ -1,3 +1,9 @@
+mdvl-meta-always (1.0.1) stable; urgency=medium
+
+  * Add dependency on erlang-base.
+
+ -- Linux-Fan, Ma_Sys.ma <Ma_Sys.ma@web.de>  Mon, 20 Apr 2020 14:35:57 +0200
+
 mdvl-meta-always (1.0.0) stable; urgency=medium
 
   * Package created with MDPC 2

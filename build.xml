@@ -11,7 +11,7 @@
 <property name="mdpc.name" value="mdvl-meta-always"/>
 <property name="mdpc.depends"
 	>ant, ant-optional, libxz-java, lsb-release, libncursesw5, rsync,
-	dialog, xz-utils, gnupg, p7zip-full, wget, ssh, coreutils,
+	dialog, xz-utils, gnupg, p7zip-full, wget, ssh, coreutils, erlang-base,
 	reprepro, php7.3-cli, mmdebstrap, debootstrap, sqlite3, parallel, perl,
 	php7.3-pdo-sqlite, buffer, dos2unix, curl, pv, git, openssh-server,
 	openjdk-8-jdk | openjdk-11-jdk</property>
