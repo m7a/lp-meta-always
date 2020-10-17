@@ -1,3 +1,10 @@
+mdvl-meta-always (1.0.3) stable; urgency=medium
+
+  * Add alternative dependency PHP 7.4 to PHP 7.3 to allow building on Debian
+    sid.
+
+ -- Linux-Fan, Ma_Sys.ma <Ma_Sys.ma@web.de>  Sun, 18 Oct 2020 01:30:50 +0200
+
 mdvl-meta-always (1.0.2) stable; urgency=medium
 
   * Add other required erlang dependencies.
