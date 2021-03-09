@@ -1,3 +1,9 @@
+mdvl-meta-always (1.0.4) stable; urgency=medium
+
+  * Add dependency on `time`.
+
+ -- Linux-Fan, Ma_Sys.ma <Ma_Sys.ma@web.de>  Tue, 09 Mar 2021 23:37:14 +0100
+
 mdvl-meta-always (1.0.3) stable; urgency=medium
 
   * Add alternative dependency PHP 7.4 to PHP 7.3 to allow building on Debian

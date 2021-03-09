@@ -14,7 +14,7 @@
 	dialog, xz-utils, gnupg, p7zip-full, wget, ssh, coreutils, erlang-base,
 	reprepro, mmdebstrap, debootstrap, sqlite3, parallel, perl,
 	php7.3-cli | php7.4-cli, php7.3-pdo-sqlite | php7.4-pdo-sqlite, 
-	buffer, dos2unix, curl, pv, git, openssh-server,
+	buffer, dos2unix, curl, pv, git, openssh-server, time,
 	erlang-runtime-tools, erlang-ssl,
 	openjdk-8-jdk | openjdk-11-jdk</property>
 <!--
