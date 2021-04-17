@@ -1,0 +1,6 @@
+
+Package list for Void Linux:
+
+xbps-install apache-ant ncurses-libs rsync dialog xz gnupg2 p7zip wget openssh coreutils erlang erlang-wx sqlite parallel perl php php-sqlite buffer dos2unix curl pv git time openjdk11
+
+missing? libxz-java, lsb-release + debian specific ones
